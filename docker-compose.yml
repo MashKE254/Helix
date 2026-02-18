@@ -32,7 +32,7 @@ services:
       - postgres
       - redis
     volumes:
-      - ./backend:/app
+      - ./backend:/app/backend
       - chroma_data:/app/chroma_db
 
   frontend:
