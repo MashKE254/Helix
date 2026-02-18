@@ -51,8 +51,8 @@ class RAGEngine:
             "type": document.document_type,
             "title": document.title,
         }
-        if document.metadata:
-            metadata.update(document.metadata)
+        if document.doc_metadata:
+            metadata.update(document.doc_metadata)
         
         # Store in ChromaDB
         self.collection.add(

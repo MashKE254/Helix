@@ -39,7 +39,7 @@ async def add_curriculum_document(
         document_type=document.document_type,
         title=document.title,
         content=document.content,
-        metadata=document.metadata or {}
+        doc_metadata=document.metadata or {}
     )
     
     db.add(curriculum_doc)

@@ -92,6 +92,6 @@ class CurriculumDocument(Base):
     document_type = Column(String)  # syllabus, past_paper, marking_scheme, textbook
     title = Column(String, nullable=False)
     content = Column(Text, nullable=False)
-    metadata = Column(JSON)  # Year, chapter, topic, etc.
+    doc_metadata = Column("metadata", JSON)  # Year, chapter, topic, etc.
     embedding_id = Column(String)  # Reference to vector DB
     created_at = Column(DateTime(timezone=True), server_default=func.now())
