@@ -3,7 +3,7 @@ Verification Layer
 Deterministic verification for math, chemistry, and code
 """
 
-from typing import Dict, Optional, Any
+from typing import Dict, List, Optional, Any
 import sympy
 from sympy import sympify, simplify, latex
 import wolframalpha
